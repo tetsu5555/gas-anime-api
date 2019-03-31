@@ -1,12 +1,3 @@
-// https://script.google.com/macros/s/AKfycbzCEZxrl4kCPU7WhOYwU_FlPJx_Domy95PCjTTJkbUamhNu6JOX/exec?table=anime
-// クエリパラーメーターを渡すのが大事。(?table=anime)
-// にブラウザからアクセスするとレスポンスが見れる。
-
-// curl -L  https://script.google.com/macros/s/AKfycbzCEZxrl4kCPU7WhOYwU_FlPJx_Domy95PCjTTJkbUamhNu6JOX/exec?table=anime
-// curlする場合は -Lオプションをつけることで実行できた。
-// -Lオプションは、--locationオプションで
-// リダイレクト設定されている URL にアクセスした時、リダイレクト先の URL に対してのリクエストを再度発行してくれる。
-
 function doGet(e) {
   var returnJson;
   if(e.parameter.table=="anime"){
